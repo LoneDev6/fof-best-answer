@@ -11,7 +11,7 @@ export default () => {
   };
 
   const blockSelectOwnPost = (post) => {
-    return !app.forum.attribute('canSelectBestAnswerOwnPost') && post.user() && post.user().id() === app.session.user.id();
+    return !app.forum.attribute('canSelectBestAnswerOwnPost') /*&& post.user() && post.user().id() === app.session.user.id()*/;
   };
 
   const isThisBestAnswer = (discussion, post) => {
